@@ -1,0 +1,26 @@
+---
+arguments_string: --hypervisor lima ubuntu2204-AARCH64a-oracle8-AARCH64madclf
+environment_variables: {}
+expected_hash:
+  HOSTS:
+    ubuntu2204-AARCH64-1:
+      lima:
+        url: template://ubuntu-22.04
+      platform: ubuntu-22.04-aarch64
+      hypervisor: lima
+      roles:
+      - agent
+    oracle8-AARCH64-1:
+      lima:
+        url: template://oraclelinux-8
+      platform: el-8-aarch64
+      hypervisor: lima
+      roles:
+      - agent
+      - classifier
+      - dashboard
+      - database
+      - frictionless
+      - master
+  CONFIG: {}
+expected_exception:

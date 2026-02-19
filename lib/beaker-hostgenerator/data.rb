@@ -141,6 +141,9 @@ module BeakerHostGenerator
                         docker: {
                           'image' => 'archlinux/archlinux',
                         },
+                        lima: {
+                          'url' => 'template://archlinux',
+                        },
                       },
                       'redhatfips7-64' => {
                         general: {
